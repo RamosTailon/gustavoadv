@@ -1,0 +1,52 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+
+.linksIcons
+    position: fixed
+    margin-top: 340px
+    background-color: variables.$black-color
+    width: 100px
+    height: 325px
+    z-index: 5
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border-radius: 45px
+    margin-left: 10px
+    @include base-mixins.mobile
+        width: 95vw
+        // width: 365px
+        height: 100px
+        background-color: variables.$black-color
+        text-align: center
+        margin: 80vh auto 0 auto
+        justify-content: center
+        align-items: center
+
+    ul
+        @include base-mixins.mobile
+            display: flex
+            justify-content: center
+        margin: 0px 0px
+        padding: 0px 0px
+        // background-color: variables.$black-color
+        li
+            list-style: none
+            width: 70px
+            height: 70px
+            background-color: variables.$white-color
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            margin-bottom: 8px
+            cursor: pointer
+            transition: .4s
+            @include base-mixins.mobile
+                margin: 0 10px
+            i
+                font-size: 2.5rem
+                color: variables.$black-color
+        li:hover
+            background-color: variables.$primary-color

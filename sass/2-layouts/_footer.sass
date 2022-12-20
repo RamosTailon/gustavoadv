@@ -1,0 +1,15 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+
+footer
+    background-color: variables.$primary-color
+    color: variables.$white-color
+    padding: 20px
+    text-align: center
+    font-family: variables.$font-2
+    font-size: 1.3em
+    z-index: 10
+    position: absolute
+    width: 100vw
+    @include base-mixins.mobile
+        width: 90vw

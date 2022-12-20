@@ -1,0 +1,55 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+
+.HOME
+    background-color: variables.$black-color
+    // background-color: green
+    display: flex
+    justify-content: end
+    align-items: center
+    padding: 0px 0 0px 150px
+    height: 73vh
+    padding-top: 140px
+    @include base-mixins.mobile
+        width: 100%
+        padding-top: 100px
+        padding-left: 0px
+        justify-content: center
+        text-align: center
+    &-title
+        color: variables.$white-color
+        @include base-mixins.mobile
+            display: flex
+            flex-direction: column
+            font-size: 50%
+        h1
+            font-family: variables.$font-1
+            font-weight: 400
+            font-size: 5em
+            margin: 0
+        h3
+            font-family: variables.$font-2
+            font-weight: 300
+            font-size: 2em
+            margin: 0
+    li
+        color: variables.$white-color
+        font-family: variables.$font-2
+        font-size: 1.3rem
+        @include base-mixins.mobile
+            text-align: center
+            font-size: 1.1rem
+
+    &-images
+        @include base-mixins.mobile
+            display: none
+        #foto_perfil
+            position: relative
+            height: 400px
+            z-index: 2
+            top: 270px
+        #fundo
+            position: relative
+            height: 73vh
+            left: 177px
+            bottom: 200px
