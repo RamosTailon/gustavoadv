@@ -41,7 +41,7 @@ nav {
 
 .linksIcons {
   position: fixed;
-  margin-top: 340px;
+  margin-top: 270px;
   background-color: #0c0c0c;
   width: 100px;
   height: 325px;
@@ -106,8 +106,6 @@ nav {
   justify-content: end;
   align-items: center;
   padding: 0px 0 0px 150px;
-  height: 73vh;
-  padding-top: 140px;
 }
 @media (max-width: 425px) {
   .HOME {
@@ -126,15 +124,23 @@ nav {
     display: flex;
     flex-direction: column;
     font-size: 50%;
+    margin-top: 150px;
   }
 }
-.HOME-title h1 {
+.HOME h1 {
   font-family: "Spectral SC", serif;
   font-weight: 400;
   font-size: 5em;
   margin: 0;
+  margin-top: -100px;
+  line-height: 1em;
 }
-.HOME-title h3 {
+@media (max-width: 425px) {
+  .HOME h1 {
+    margin-bottom: 20px;
+  }
+}
+.HOME h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 2em;
@@ -160,13 +166,14 @@ nav {
   position: relative;
   height: 400px;
   z-index: 2;
-  top: 270px;
+  top: 180px;
 }
 .HOME-images #fundo {
   position: relative;
   height: 73vh;
   left: 177px;
-  bottom: 200px;
+  top: -260px;
+  transform: scaleY(1.1);
 }
 
 .ABOUT {
@@ -200,6 +207,11 @@ nav {
 .ABOUT-container-content img {
   width: 18em;
   border-radius: 20px;
+}
+@media (max-width: 425px) {
+  .ABOUT-container-content img {
+    width: 85%;
+  }
 }
 .ABOUT-container-content p {
   margin: 0 50px;
@@ -270,6 +282,7 @@ nav {
   .CONTACT-container-content .list p {
     font-size: 100%;
     margin-left: 50px;
+    overflow-x: scroll;
   }
 }
 

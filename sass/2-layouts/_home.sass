@@ -8,8 +8,6 @@
     justify-content: end
     align-items: center
     padding: 0px 0 0px 150px
-    height: 73vh
-    padding-top: 140px
     @include base-mixins.mobile
         width: 100%
         padding-top: 100px
@@ -22,16 +20,21 @@
             display: flex
             flex-direction: column
             font-size: 50%
-        h1
-            font-family: variables.$font-1
-            font-weight: 400
-            font-size: 5em
-            margin: 0
-        h3
-            font-family: variables.$font-2
-            font-weight: 300
-            font-size: 2em
-            margin: 0
+            margin-top: 150px
+    h1
+        font-family: variables.$font-1
+        font-weight: 400
+        font-size: 5em
+        margin: 0
+        margin-top: -100px
+        line-height: 1em
+        @include base-mixins.mobile
+            margin-bottom: 20px
+    h3
+        font-family: variables.$font-2
+        font-weight: 300
+        font-size: 2em
+        margin: 0
     li
         color: variables.$white-color
         font-family: variables.$font-2
@@ -47,9 +50,10 @@
             position: relative
             height: 400px
             z-index: 2
-            top: 270px
+            top: 180px
         #fundo
             position: relative
             height: 73vh
             left: 177px
-            bottom: 200px
+            top: -260px
+            transform: scaleY(1.1)
